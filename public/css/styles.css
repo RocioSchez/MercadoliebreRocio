@@ -1,0 +1,287 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3.titulares {
+    font-size: 24px;
+    padding: 0.5rem;
+    color: #666;
+}
+
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+main section div.products article i{
+    transition: transform 1s;
+}
+
+main section div.products article:hover i{
+    transform: rotate(-90deg);
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main section article:hover .description{
+    display: block;
+}
+
+.login input[type='submit']:hover,
+.register input[type='submit']:hover{
+    background-color: #0022AA;
+}
+p.copyright {
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+}
+footer {
+    background-color: white;
+    width: 100%;
+}
+div.formaPago,div.seguridad,div.envioGratis  {
+    padding: 2rem;
+}
+.div_conteiner{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 12%;
+    margin-right: 12%;;
+}
+h3 {
+    text-align: center;
+    padding-top: 0.3rem;
+    color: #666;
+    margin: 0;
+}
+p.icono-tarjeta i, p.icono-regalo i, p.icono-seguridad i{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.div_conteiner .icono-tarjeta i, .div_conteiner .icono-regalo i, .div_conteiner .icono-seguridad i {
+    color: #1259c3;
+}
+.div_conteiner .icono-tarjeta i:hover,
+.div_conteiner .icono-regalo i:hover,
+.div_conteiner .icono-seguridad i:hover {
+    color: #39b54a ;
+}
+.textoFooter{
+    text-align: center;
+    margin: 0;
+}
+@media (min-width: 361px){
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px){
+    main section div.products article{
+        width: 22%;
+    }
+    
+    footer section.footer-information {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+        text-align: center;
+        margin: 15px;
+        gap: 15px;
+        justify-content: space-between;
+        margin: auto;
+        padding: 0px;
+        max-width: 1200px;
+    }
+
+    footer section div:hover {
+        i {
+            color: #39b54a;
+        }
+    }
+    .div_conteiner{
+        display: flex;
+        justify-content: space-around;
+        padding: 0px;
+        margin: 0px
+    }
+
+}
